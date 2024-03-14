@@ -7,6 +7,7 @@
 - Doubly LL w/o Tail
 - Doubly LL w/ Tail
 ```cpp
+//default
 void push_front(int data) {}
 void push_back(int data) {}
 void pop_front() {}
@@ -19,10 +20,45 @@ void pop_second_front() {}  //remove 2nd node
 void pop_second_back() {}  //remove 2nd to last node
 ```
 
-[Singly Linked List w/o Tail](SinglyLL.cpp)
+Link to template[Singly Linked List w/o Tail](SinglyLL.cpp)
 
 ### Answers
 [Singly Linked List w/o Tail](SinglyLL-answers.cpp)
+
+
+<details>
+  <summary>Answers</summary>
+  
+  ### Here is a hidden section
+  - Point 1
+  - Point 2
+  - Here's some code:
+  
+    ```cpp
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        cout << "Hello, world!" << endl;
+        return 0;
+    }
+    ```
+  
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Methods and Runtimes
 ### Vectors
