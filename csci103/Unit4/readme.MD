@@ -1,6 +1,11 @@
 # Unit 4 - Vectors, LinkedLists...
 ## Linked List Implementation Practice
-### Links
+#### Implement all methods for..
+- Singly LL w/o Tail 
+- Singly LL w/ Tail
+- Doubly LL w/o Tail
+- Doubly LL w/ Tail
+
 [Singly Linked List w/o Tail](SinglyLL.cpp)
 
 ### Answers
