@@ -1,4 +1,11 @@
 # Unit 4 - Vectors, LinkedLists...
+## Linked List Implementation Practice
+### Links
+[Singly Linked List w/o Tail](SinglyLL.cpp)
+
+### Answers
+[Singly Linked List w/o Tail](SinglyLL-answers.cpp)
+
 ## Methods and Runtimes
 ### Vectors
 - push_back(T val) O(1)
