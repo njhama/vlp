@@ -11,6 +11,12 @@ void push_front(int data) {}
 void push_back(int data) {}
 void pop_front() {}
 void pop_back() {}
+
+//challenges
+void push_second_front(int data) {}  //push to the second spot
+void push_second_back(int data) {}  //push to second to last
+void pop_second_front() {}
+void pop_second_back() {}
 ```
 
 [Singly Linked List w/o Tail](SinglyLL.cpp)
