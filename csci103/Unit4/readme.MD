@@ -23,25 +23,25 @@ void pop_second_back() {}  //remove 2nd to last node
 Link to template[Singly Linked List w/o Tail](SinglyLL.cpp)
 
 ### Answers
-[Singly Linked List w/o Tail](SinglyLL-answers.cpp)
-
-
 <details>
-  <summary>Answers</summary>
+  <summary>Click to reveal..</summary>
+  ### Singly Linked List w/o Tail
+   ```cpp
   
-  ### Here is a hidden section
-  - Point 1
-  - Point 2
-  - Here's some code:
+    ```
+  ### Singly Linked List w/ Tail
+   ```cpp
   
-    ```cpp
-    #include <iostream>
-    using namespace std;
+    ```
 
-    int main() {
-        cout << "Hello, world!" << endl;
-        return 0;
-    }
+  ### Doubly Linked List w/o Tail
+   ```cpp
+  
+    ```
+
+### Doubly Linked List w/ Tail
+   ```cpp
+  
     ```
   
 </details>
