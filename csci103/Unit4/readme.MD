@@ -1,10 +1,17 @@
 # Unit 4 - Vectors, LinkedLists...
 ## Linked List Implementation Practice
+### Exercises
 #### Implement all methods for..
 - Singly LL w/o Tail 
 - Singly LL w/ Tail
 - Doubly LL w/o Tail
 - Doubly LL w/ Tail
+```cpp
+void push_front(int data) {}
+void push_back(int data) {}
+void pop_front() {}
+void pop_back() {}
+```
 
 [Singly Linked List w/o Tail](SinglyLL.cpp)
 
