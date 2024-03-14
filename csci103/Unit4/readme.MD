@@ -26,13 +26,13 @@ Link to template[Singly Linked List w/o Tail](SinglyLL.cpp)
 <details>
   <summary>Click to reveal..</summary>
   ### Singly Linked List w/o Tail
-   ```cpp
+  ```cpp
   
-    ```
+  ```
   ### Singly Linked List w/ Tail
    ```cpp
   
-    ```
+  ```
 
   ### Doubly Linked List w/o Tail
    ```cpp
