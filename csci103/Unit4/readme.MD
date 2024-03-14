@@ -15,8 +15,8 @@ void pop_back() {}
 //challenges
 void push_second_front(int data) {}  //push to the second spot
 void push_second_back(int data) {}  //push to second to last
-void pop_second_front() {}
-void pop_second_back() {}
+void pop_second_front() {}  //remove 2nd node
+void pop_second_back() {}  //remove 2nd to last node
 ```
 
 [Singly Linked List w/o Tail](SinglyLL.cpp)
