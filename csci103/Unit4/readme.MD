@@ -38,12 +38,12 @@ Link to template[Singly Linked List w/o Tail](SinglyLL.cpp)
   ### Doubly Linked List w/o Tail
    ```cpp
   
-    ```
+  ```
 
-### Doubly Linked List w/ Tail
+  ### Doubly Linked List w/ Tail
    ```cpp
   
-    ```
+  ```
   
 </details>
 
