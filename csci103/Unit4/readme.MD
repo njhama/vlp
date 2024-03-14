@@ -1,1 +1,32 @@
 # Unit 4 - Vectors, LinkedLists...
+
+## Vectors
+- push_back(T val) O(1)
+- pop_back() O(1)
+- operator[] O(1)
+* can't push front with vectors
+
+## Singly Linked List w/o Tail Pointer
+- push_back(T val) O(n)
+- pop_back() O(n)
+- push_front(T val) O(1)
+- pop_front() O(1)
+
+## Singly Linked List w/ Tail Pointer
+- push_back(T val) O(1)
+- pop_back() O(n) (* important!)
+- push_front(T val) O(1)
+- pop_front() O(1)
+
+## Doubly Linked List w/o Tail Pointer
+- push_back(T val) O(n)
+- pop_back() O(n)
+- push_front(T val) O(1)
+- pop_front() O(1)
+
+## Doubly Linked List w/ Tail Pointer
+- push_back(T val) O(1)
+- pop_back() O(1) 
+- push_front(T val) O(1)
+- pop_front() O(1)
+
