@@ -25,9 +25,9 @@ Link to template[Singly Linked List w/o Tail](SinglyLL.cpp)
 ### Answers
 <details>
   <summary>Click to reveal..</summary>
-  #### Singly Linked List w/o Tail
+  ### Singly Linked List w/o Tail
   ```cpp
-  
+    test
   ```
   ### Singly Linked List w/ Tail
    ```cpp
