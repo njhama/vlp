@@ -52,6 +52,39 @@ Link to template code: [Singly Linked List w/o Tail](SinglyLL.cpp)
         curr->next = new Node(data);
         curr->next->next = nullptr;
     }
+
+    void pop_front() {
+        if (not head) {
+            return;
+        }
+        if (head->next = nullptr) {
+            delete head;
+            head = nullptr;
+            return;
+        }
+        Node * temp = head->next;
+        delete head;
+        head = temp;
+    }
+
+  void pop_back() {
+        if (not head) {
+            return;
+        }
+        if (head->next = nullptr) {
+            delete head;
+            head = nullptr;
+            return;
+        }
+
+        Node* curr = head;
+        while (curr->next->next != nullptr) {
+            curr = curr->next;
+        }
+        delete curr->next;
+        curr->next = nullptr;
+    }
+  
     
   ```
   ### Singly Linked List w/ Tail
