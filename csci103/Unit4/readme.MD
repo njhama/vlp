@@ -20,7 +20,7 @@ void pop_second_front() {}  //remove 2nd node
 void pop_second_back() {}  //remove 2nd to last node
 ```
 
-Link to template[Singly Linked List w/o Tail](SinglyLL.cpp)
+Link to template code: [Singly Linked List w/o Tail](SinglyLL.cpp)
 
 ### Answers
 <details>
@@ -28,7 +28,31 @@ Link to template[Singly Linked List w/o Tail](SinglyLL.cpp)
 
   ### Singly Linked List w/o Tail
   ```cpp
-    test
+    void push_front(int data) {
+        if (head == nullptr) {
+            head = new Node(data);
+            return;
+        }  
+
+        Node * myNode = new Node(data);
+        myNode->next = head;
+        head = myNode;
+    }
+
+    void push_back(int data) {
+        if (head == nullptr) {
+            head = new Node(data);
+            return;
+        }   
+
+        Node * curr = head;
+        while (curr->next != nullptr) {
+            curr = curr->next;
+        }
+        curr->next = new Node(data);
+        curr->next->next = nullptr;
+    }
+    
   ```
   ### Singly Linked List w/ Tail
    ```cpp
