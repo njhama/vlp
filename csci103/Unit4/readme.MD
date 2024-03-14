@@ -4,7 +4,7 @@
 - push_back(T val) O(1)
 - pop_back() O(1)
 - operator[] O(1)
-* can't push front with vectors
+** can't push front with vectors
 
 ## Singly Linked List w/o Tail Pointer
 - push_back(T val) O(n)
