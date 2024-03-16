@@ -9,11 +9,11 @@ struct Node {
 };
 ```
 
-### LL Class
+### Linked List Class
 ```cpp
 class LinkedList {
 private:
-    Node* head;
+    Node* head;    ALL LL must have a head (pointer to first node)
 
 public:
   int front();
