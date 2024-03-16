@@ -6,7 +6,12 @@
     - Fast random access O(1) 
     - Fast insertion/removal from end
 - Vector Cons
-    - Inserting to front/middle
+    - Slow inserting to front/middle
+- Linked List Pros
+    - Fast insertion/removal to the beginning of list
+    - Fast insertion to end of list with Tail
+- Linked List Cons
+    - Slow Random Access
 
 ## Linked List Structure
 #### Made up of Nodes
