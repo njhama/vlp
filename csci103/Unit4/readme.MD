@@ -19,7 +19,9 @@ void push_second_back(int data) {}  //push to second to last
 void pop_second_front() {}  //remove 2nd node
 void pop_second_back() {}  //remove 2nd to last node
 
-//hard challenges
+//other challenges
+void insert_if_greater_than_front(int data) {}  //push to end of list if the value if greater than the first
+void insert_if_greater_than_back(int data) {}  //push to end of list if that value is less than the last
 void push_in_order(int data) {} //add a new node to a sorted linked ist
 ```
 
@@ -90,20 +92,12 @@ Link to template code: [Singly Linked List w/o Tail](SinglyLL.cpp)
   
     
   ```
+
+
   ### Singly Linked List w/ Tail
-   ```cpp
-  
-  ```
-
   ### Doubly Linked List w/o Tail
-   ```cpp
-  
-  ```
-
   ### Doubly Linked List w/ Tail
-   ```cpp
-  
-  ```
+  you can email me if you want to check answers for these
   
 </details>
 
