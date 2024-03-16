@@ -10,16 +10,16 @@
   1) Types are compatible (ie int on both left and right of = )
   2) Same Pointer Levels on both sides of =
 
-  Explanations
-  1.1.True: string* x = new string[m];
-    - Left Side:  
-     - Pointer Lvl: 1, Just a pointer to the String
-     - Type: String*
-    - Right Side
-      Pointer Lvl: 1, allocates an array and returns a pointer to the first element in the list
-      Type: String*, since right side returns a string*
-    Conclusion
-      True since ptr lvls are the same and type are compatible!
+### Explanations
+1.1.True: string* x = new string[m];
+- Left Side:
+ - Pointer Lvl: 1, Just a pointer to the String
+ - Type: String*
+- Right Side
+ - Pointer Lvl: 1, allocates an array and returns a pointer to the first element in the list
+ - Type: String*, since right side returns a string*
+- Conclusion
+ - True since ptr lvls are the same and type are compatible!
       
   1.2.False: char* x = new string;
     Left Side:  
