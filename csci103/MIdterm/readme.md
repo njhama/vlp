@@ -16,10 +16,10 @@
   - Pointer Lvl: 1, Just a pointer to the String
   - Type: String*
 - Right Side
- - Pointer Lvl: 1, allocates an array and returns a pointer to the first element in the list
- - Type: String*, since right side returns a string*
+  - Pointer Lvl: 1, allocates an array and returns a pointer to the first element in the list
+  - Type: String*, since right side returns a string*
 - Conclusion
- - True since ptr lvls are the same and type are compatible!
+  - True since ptr lvls are the same and type are compatible!
       
   1.2.False: char* x = new string;
     Left Side:  
