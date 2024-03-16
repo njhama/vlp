@@ -18,7 +18,8 @@ private:
 public:
   int front();
   void push_back(int val);
-  ...
+  other methods...
+}
 ```
 
 
