@@ -33,4 +33,6 @@
 4. True/False: int** mat = new int[n][m];
 
 ### Answers
-- 
+- True
+- False
+- True
