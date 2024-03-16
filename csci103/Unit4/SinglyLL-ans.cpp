@@ -59,15 +59,50 @@ public:
         head = myNode;
     }
 
+    void pop_front() {
+        if (not head) {
+            return;
+        }
+        if (head->next = nullptr) {
+            delete head;
+            head = nullptr;
+            return;
+        }
+        Node * temp = head->next;
+        delete head;
+        head = temp;
+    }
+
+    void pop_back() {
+        if (not head) {
+            return;
+        }
+        if (head->next = nullptr) {
+            delete head;
+            head = nullptr;
+            return;
+        }
+
+        Node* curr = head;
+        while (curr->next->next != nullptr) {
+            curr = curr->next;
+        }
+        delete curr->next;
+        curr->next = nullptr;
+    }
+
+
     // return value of first node
     // 1 -> 2 -> 3 return 1
     int front() {
+        if (not head) {return -1;}
         return head->val;
     }
 
     // return value of last node
     // 1 -> 2 -> 3 return 3
     int back() {
+        if (not head) {return -1;}
         Node * curr = head;
         while (curr->next != nullptr) {
             curr = curr->next;
@@ -79,6 +114,14 @@ public:
     // add node to the second last
     // 1 -> 2 -> 3 becomes 1 -> 2 -> 4 -> 3 when push_second_back(4)
     void push_second_back(int data) {
+        if (head == nullptr) {
+            head = new Node(data);
+        }
+        if (head->next == nullptr) {
+            Node* newFirst = new Node(data);
+            newFirst->next = head;
+            head = newFirst;
+        }
         Node * curr = head;
         while (curr->next->next != nullptr) {
             curr = curr->next;
@@ -91,6 +134,8 @@ public:
     // remove second to last node
     // 1 -> 2 -> 3 -> 4 becomes 1 -> 2 -> 4  when pop_second_back()
     void pop_second_back() {
+        if (head == nullptr or head->next == nullptr) {return;}
+
         Node * curr = head;
         while (curr->next->next->next != nullptr) {
             curr = curr->next;
@@ -103,6 +148,10 @@ public:
     // add node to the one after the first
     // 1 -> 2 -> 3 becomes 1 -> 4 -> 2 -> 3 when push_second_front(4)
     void push_second_front(int data) {
+        if (head == nullptr) {
+            head = new Node(data);
+            return;
+        }
         Node * second = head->next;
         head->next = new Node(data);
         head->next->next = second;
@@ -111,9 +160,44 @@ public:
     // removes second node
     // 1 -> 2 -> 3 -> 4 becomes 1 -> 3 -> 4 when pop_second_front()
     void pop_second_front() {
+        if (head == nullptr or head->next == nullptr) {return;}
         Node * third = head->next->next;
         delete head->next;
         head->next = third;
+    }
+
+    //push to end of list if the value if greater than the first
+    void insert_if_greater_than_front(int data) {
+        if (head == nullptr) {
+            head = new Node(data);
+            return;
+        }
+        if (data < head->val) {
+            return;
+        }
+        Node * curr = head;
+        while (curr->next!=nullptr) {
+            curr = curr->next;
+        }
+        curr->next = new Node(data);
+        curr->next->next = NULL;
+    }
+
+    //push to end of list if the value is greater than the last
+    void insert_if_greater_than_back(int data) {
+        if (head == nullptr) {
+            head = new Node(data);
+            return;
+        }
+        Node * curr = head;
+        while (curr->next != nullptr) {
+            curr = curr->next;
+        }
+        if (data < curr->val ) {
+            return;
+        }
+        curr->next = new Node(data);
+        curr->next->next = NULL;
     }
 
     // IGNORE (JUST TO TEST)
@@ -128,6 +212,9 @@ public:
         }
         std::cout << std::endl;
     }
+
+
+
 };
 
 int main() {
@@ -189,6 +276,38 @@ int main() {
 
     cout << "Testing pop_second_front()..." << endl;
     cout << "Expected: 4 -> 1 -> 2 -> 3 " << endl;
+    cout << "Yours:    ";
+    list.print();
+    cout << endl;
+    
+    list.insert_if_greater_than_front(3);
+
+    cout << "Testing insert_if_greater_than_front(3)..." << endl;
+    cout << "Expected: 4 -> 1 -> 2 -> 3 " << endl;
+    cout << "Yours:    ";
+    list.print();
+    cout << endl;
+
+    list.insert_if_greater_than_front(5);
+
+    cout << "Testing insert_if_greater_than_front(3)..." << endl;
+    cout << "Expected: 4 -> 1 -> 2 -> 3 -> 5" << endl;
+    cout << "Yours:    ";
+    list.print();
+    cout << endl;
+
+    list.insert_if_greater_than_back(4);
+
+    cout << "Testing insert_if_greater_than_back(4)..." << endl;
+    cout << "Expected: 4 -> 1 -> 2 -> 3 -> 5" << endl;
+    cout << "Yours:    ";
+    list.print();
+    cout << endl;
+
+    list.insert_if_greater_than_back(6);
+
+    cout << "Testing insert_if_greater_than_back(6)..." << endl;
+    cout << "Expected: 4 -> 1 -> 2 -> 3 -> 5 -> 6" << endl;
     cout << "Yours:    ";
     list.print();
     cout << endl;
