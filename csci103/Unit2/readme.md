@@ -24,3 +24,13 @@
 
   
 ## Pointer & Reference Practice
+
+
+## Dynamic Memory Practice
+1. True/False: string* x = new string[m];
+2. True/False: char* x = new string;
+3. True/False: double** mat = new double*[m];
+4. True/False: int** mat = new int[n][m];
+
+### Answers
+- 
