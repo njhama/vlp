@@ -92,20 +92,12 @@ Link to template code: [Singly Linked List w/o Tail](SinglyLL.cpp)
   
     
   ```
+
+
   ### Singly Linked List w/ Tail
-   ```cpp
-  
-  ```
-
   ### Doubly Linked List w/o Tail
-   ```cpp
-  
-  ```
-
   ### Doubly Linked List w/ Tail
-   ```cpp
-  
-  ```
+  you can email me if you want to check answers for these
   
 </details>
 
