@@ -1,4 +1,28 @@
 # Unit 4 - Vectors, LinkedLists...
+## Linked List Structure
+#### Made up of Nodes
+```cpp
+struct Node {
+    int val;  //each node holds some individual data
+    Node* next;  //each node has a pointer to the next node
+    Node(int data) : data(data), next(nullptr) {} // constructor for Node
+};
+```
+
+### LL Class
+```cpp
+class LinkedList {
+private:
+    Node* head;
+
+public:
+  int front();
+  void push_back(int val);
+  ...
+```
+
+
+
 ## Linked List Implementation Practice
 ### Exercises
 #### Implement all methods for..
