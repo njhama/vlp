@@ -127,6 +127,38 @@ int main() {
     cout << "Yours:    ";
     list.print();
     cout << endl;
+    
+    list.insert_if_greater_than_front(3);
+
+    cout << "Testing insert_if_greater_than_front(3)..." << endl;
+    cout << "Expected: 4 -> 1 -> 2 -> 3 " << endl;
+    cout << "Yours:    ";
+    list.print();
+    cout << endl;
+
+    list.insert_if_greater_than_front(5);
+
+    cout << "Testing insert_if_greater_than_front(3)..." << endl;
+    cout << "Expected: 4 -> 1 -> 2 -> 3 -> 5" << endl;
+    cout << "Yours:    ";
+    list.print();
+    cout << endl;
+
+    list.insert_if_greater_than_back(4);
+
+    cout << "Testing insert_if_greater_than_back(4)..." << endl;
+    cout << "Expected: 4 -> 1 -> 2 -> 3 -> 5" << endl;
+    cout << "Yours:    ";
+    list.print();
+    cout << endl;
+
+    list.insert_if_greater_than_back(6);
+
+    cout << "Testing insert_if_greater_than_back(6)..." << endl;
+    cout << "Expected: 4 -> 1 -> 2 -> 3 -> 5 -> 6" << endl;
+    cout << "Yours:    ";
+    list.print();
+    cout << endl;
 
     return 0;
 }
