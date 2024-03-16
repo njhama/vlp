@@ -54,6 +54,9 @@ public:
     // 1 -> 2 -> 3 -> 4 becomes 1 -> 3 -> 4 when pop_second_front()
     void pop_second_front() {}
 
+    void insert_if_greater_than_front(int data) {}  //push to end of list if the value if greater than the first
+    void insert_if_greater_than_back(int data) {}  //push to end of list if that value is less than the last
+
     // IGNORE (JUST TO TEST)
     void print() const {
         Node* current = head;
