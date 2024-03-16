@@ -19,7 +19,7 @@ void push_second_back(int data) {}  //push to second to last
 void pop_second_front() {}  //remove 2nd node
 void pop_second_back() {}  //remove 2nd to last node
 
-//hard challenges
+//other challenges
 void push_in_order(int data) {} //add a new node to a sorted linked ist
 ```
 
