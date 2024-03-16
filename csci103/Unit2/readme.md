@@ -13,7 +13,7 @@
 - Initialization
   ```cpp
   int var = 10;
-  int* ptr = &var;  //pointer to var
+  int* ptr = &var;  //pointer to the address of var
   ```
 - Dereferncing Pointers
   ```cpp
