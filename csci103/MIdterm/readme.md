@@ -13,8 +13,8 @@
 ### Explanations
 1.1.True: string* x = new string[m];
 - Left Side:
- - Pointer Lvl: 1, Just a pointer to the String
- - Type: String*
+  - Pointer Lvl: 1, Just a pointer to the String
+  - Type: String*
 - Right Side
  - Pointer Lvl: 1, allocates an array and returns a pointer to the first element in the list
  - Type: String*, since right side returns a string*
