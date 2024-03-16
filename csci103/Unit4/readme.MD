@@ -1,4 +1,13 @@
 # Unit 4 - Vectors, LinkedLists...
+## Vectors vs Linked Lists
+- Both ways to linearly represent data
+- Share many methods (push_back(), pop_back(), etc)
+- Vector Pros
+-- Fast random access O(1) 
+-- Fast insertion/removal from end
+- Vector Cons
+-- Inserting to front/middle
+
 ## Linked List Structure
 #### Made up of Nodes
 ```cpp
