@@ -15,4 +15,49 @@
 - Non-observable => conformant problem (sensorless)
     - agent has no idea where it is
 - Non-deterministic and/or partailly observable => contingency
-    
+    - percepts provide new info abt current state
+- Unknown state space => exploration 
+
+
+
+### Examples
+
+### Search Graphs & Search Trees
+#### Graphs Search
+##### Directed Graphs
+
+### Search Strategies
+
+#### Time and Cost Measurements
+- b: branching factor
+- d: depth of least-cost solution
+- m: max depth of the state space (depth of search tree)
+
+
+#### Uniformed Search Strategies
+- BFS
+- Uniform-cost search
+- DFS
+- Depth-limited search
+- Iterative Deepneing search
+
+
+###### BFS
+- FIFO queue
+
+##### DFS
+- LIFO stack
+
+##### Uniform Cost Search (Djikstras)
+- Expand least cost unexpanded node
+
+##### Itertive Deepening Search
+- get DFS space advantage w/ BFS time advantage
+
+# Lesson 4: Informed Search
+### BFS & Greedy
+### A* Search
+### Admissible Heuristics
+### Properties of A* Search
+### Local Search & Iterative Improvements
+### Gradient Based Algorithms
