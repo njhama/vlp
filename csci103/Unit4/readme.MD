@@ -13,7 +13,7 @@ struct Node {
 ```cpp
 class LinkedList {
 private:
-    Node* head;    ALL LL must have a head (pointer to first node)
+    Node* head;    // ALL LL must have a head (pointer to first node)
 
 public:
   int front();
