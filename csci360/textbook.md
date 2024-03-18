@@ -16,7 +16,7 @@ Informed Search Algo
     : somehting 
 
 ---
-### Problem Definition
+#### Problem Definition
 1. Initial State
     : Where the agent starts
     *In(Arad)*
@@ -36,8 +36,8 @@ Informed Search Algo
 ![test](/csci360/img/1.png)
 
 
-
-#### Example Problem
+---
+##### Example Problem #1
 ![test](/csci360/img/2.png)
 - State
     : Determined by the agent location and the dirt locations
@@ -52,9 +52,57 @@ Informed Search Algo
 5. Path Cost
     : Each step costs 1
 
+##### Example Problem #2
+![test](/csci360/img/3.png)
+- State
+    : Location of 8 tiles and blank one
+1. Initial State
+    : Any state
+2. Actions
+    : Blank Space L,R,U,D
+3. Transition Model
+    : Returns the resulting state
+4. Goal Test
+    : Checks if in in order pattern
+5. Path Cost
+    : Each step costs 1
 
----
+#### Example Problem #3 
+Airline travel planning system
+
+- State
+    : Location & current time
+- Initial State
+    : Based on user's query
+- Actions
+    : Take any flight from current location, leaving after that current time
+- Transition Models
+    : State resulting from taking a flight
+- Goal test
+    : Check if we are at final destination
+- Path cost
+    : Monetary, Waiting time, flight time, etc
+
+### Uninformed Search Strategies (3.4)
+- BFS
+    : root node expanded first
+- Uniform Cost Search
+    : test
+- DFS
+    : expands deepest node
+- Depth-limited Search
+    : something
+
 ## Search in Complex Environments (Ch 3.5 - Ch 3.6, Ch 4.1 - Ch 4.2)
+
+### Informed (Heuristic) Search Strategies (3.5)
+- Greedy BFS
+- A* 
+
+### Local Search Algorithms & Optimization Problems (4.1)
+#### Hill Climbing Search
+
+
 
 ## Adversarial Search and Games (Ch 5.1 - Ch 5.3)
 
