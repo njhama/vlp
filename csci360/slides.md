@@ -6,11 +6,11 @@
     : Belief that intelligence can be studied through the design of intelligent agents
 - Church-Turning Hypothesis
     : The premise of computing is that any type of computation can be carried out on a Turing Machine (AI is achievable by computers)
----
+
 #### Assessing Intelligence of a Machine
 1. Its actions
 2. Its reasoning procedures
----
+
 #### Instrumental Rationalility (Max Weber)
 - Calculability
     - Results can be exact or apporximately calculated
@@ -22,14 +22,14 @@
     - Due to rules, regulations, and structure
 - Control over uncertainties
 - Conformation to conventinal wisdom or ingrained habituation
----
+
 #### Espistemology
     Meaning knowledge or understanding
 
 - Epistemic Rationality
     :    Achieving accurate beliefs about the world
         It invovles updating on receiving new evidence
----
+
 #### Schools of AI
 ![test](/csci360/img/4.png)
 1. Thinking Rationally
@@ -40,7 +40,7 @@
     - activities that we associate with human thinking
     - A computer could be said to “think” if a human interrogator could not tell it apart, through conversation, from a human being
 4. Acting Rationally
----
+
 #### Turing Test Critique 
 - The Chinese Room Argument
     : Intelligent or human-like behavior does not imply having a mind or understanding
@@ -61,11 +61,27 @@
         : To perceive objects
     6. Robotics (Additional)
         : To manipulate objects and move about
----
+
 #### Machines that maximize utility
 - Rational: maximally acheiving pre-defined goals
 - Goals are expressed in terms of the utility of outcomes
 - Being rational means maximizing your expected utility
+
+#### AGI
+- Artificial General Intelligence (AGI): Hypothetical intelligecne of a machine that has the capacity to understand or learn any intellectual task that a human being can
+- Tests for AGI
+    - The Turing Test
+    - The Coffee Test (Wozniak)
+    - The Robot College Student Test (Goertzel)
+    - The Employment Test (Nilsson)
+** missing some **
+
+#### Threats of AI
+3 Difficulties
+1. Possibility of initially-unnoticed routine but catastophic bugs in any software systems
+2. Unintended behavior the firs ttime any software system encounters a new scenario
+3. Dynamic Nature & Learning capabilities may give rise to new uninteded behaviours
+
 
 
 ### ... need to finish...
@@ -177,11 +193,11 @@
 - Find Solutions
     : Sequence of cities
         Arad, Sibiu, Fagaras, Bucharest
-
-**insert photo here**
+##### Romania Pic
+![test](/csci360/img/12.png)
 
 - Single-state problem formulation
-    : A problem defined by four items:
+A problem defined by four items:
     - Initial state: eg "At Arad"
     - Successor function S(x) = set of action-state pairs
         - Roads: Go to adjacent city with cost == distance
@@ -201,7 +217,7 @@
         - A subset X x X: the set of all edges, with (x,x`) element A iff state x' can be reached from state x by applying an operator s element S
 
 #### Vacuum World State Space
-**insert photo here**
+![test](/csci360/img/13.png)
 
 - States: interger dirt and roobot locations
 - Actions: left, right, vacuum, noop
@@ -209,25 +225,35 @@
 - Path Cost: 1 per action (0 for noop)
 
 #### The 8-Puzzle
-**insert photo here**
+![test](/csci360/img/14.png)
 - States: Integer locations of tiles
 - Actions: Move blank left, right, up, down
 - Goal Test: Goal State (given)
 - Path cost: 1 per move
 
-#### Block World
-**insert photo here**
-- States: x
-- Actions: x
-- Goal Test: x
-- Path cost: x
---- 
+
 ### Search Graphs & Search Trees
+- Typical Problem: Agent is in ones state, has a set of deterministic actions, and wants to get to its goal state
 
-#### Graphs Search
+
+
+
+
 ##### Directed Graphs
+- Consists of a set N of state-nodes and a set A of ordered pairs of state-nodes, called edges
+- A path is a sequence of neighboring state-nodes
+- The length of the path is k
+- The number of state-nodes in it is k+1
 
----
+
+##### Search Graphs vs Trees
+- In a search graph, each state occurs only once
+![test](/csci360/img/15.png)
+
+#### State-node vs tree node
+- 
+
+
 ### Search Strategies
     : Define by picking the order of tree-node expansion
     - Completeness: Does it always find a solution if one exists
@@ -251,21 +277,21 @@
 
 ###### BFS
 - FIFO queue
-**insert photo**
-Properties
-- Complete: Yes
-- Time:
-- Space: 
-- Optimal: 
+![test](/csci360/img/16.png)
+- Properties
+    - Complete: Yes
+    - Time: \(O(b^d)\) (Branching factor ^ Depth of least cost sol'n)
+    - Space: \(O(b^d)\)
+    - Optimal: Yes
 
 ##### DFS
 - LIFO stack
-**ionsert photo**
-Properties
-- Complete: Yes
-- Time:
-- Space: 
-- Optimal: 
+![test](/csci360/img/17.png)
+- Properties
+    - Complete: Yes
+    - Time:
+    - Space: 
+    - Optimal: 
 
 ##### Uniform Cost Search (Djikstras)
 - Expand least cost unexpanded node
