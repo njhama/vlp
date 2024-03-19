@@ -166,14 +166,74 @@
 - Unknown state space => exploration 
 
 
-
 ### Examples
 
+#### Romania
+- Formulate Goal
+    : Bucharest
+- Formulate Problem:
+    : States: various cities
+    Actions: Drive between cities
+- Find Solutions
+    : Sequence of cities
+        Arad, Sibiu, Fagaras, Bucharest
+
+**insert photo here**
+
+- Single-state problem formulation
+    : A problem defined by four items:
+    - Initial state: eg "At Arad"
+    - Successor function S(x) = set of action-state pairs
+        - Roads: Go to adjacent city with cost == distance
+        - eg S(Arad) - {(Arad -> Zerind, Zerind),...}
+    - Goal Test
+        - Explicit: x = At Bucharest
+        - Implicit NoDirt(x)
+    - Path Cost (Additive)
+        - Sum of distances, number of actions executed, etc
+        - c(x,a,y) is the step cost
+
+    **A solution is a sequence of actions leading from the initial to a goal state**
+
+- State Space / Problem Space
+    : the state space is a graph (X,A) with
+        - X: the set of nodes (all states of a problem)
+        - A subset X x X: the set of all edges, with (x,x`) element A iff state x' can be reached from state x by applying an operator s element S
+
+#### Vacuum World State Space
+**insert photo here**
+
+- States: interger dirt and roobot locations
+- Actions: left, right, vacuum, noop
+- Goal Test: No dirt
+- Path Cost: 1 per action (0 for noop)
+
+#### The 8-Puzzle
+**insert photo here**
+- States: Integer locations of tiles
+- Actions: Move blank left, right, up, down
+- Goal Test: Goal State (given)
+- Path cost: 1 per move
+
+#### Block World
+**insert photo here**
+- States: x
+- Actions: x
+- Goal Test: x
+- Path cost: x
+--- 
 ### Search Graphs & Search Trees
+
 #### Graphs Search
 ##### Directed Graphs
 
+---
 ### Search Strategies
+    : Define by picking the order of tree-node expansion
+    - Completeness: Does it always find a solution if one exists
+    - Time Complexity: Number of nodes generated / expanded
+    - Space Complexity: Max number of nodes in memory
+    - Optimality: Does it always find a least-cost solution
 
 #### Time and Cost Measurements
 - b: branching factor
@@ -191,15 +251,51 @@
 
 ###### BFS
 - FIFO queue
+**insert photo**
+Properties
+- Complete: Yes
+- Time:
+- Space: 
+- Optimal: 
 
 ##### DFS
 - LIFO stack
+**ionsert photo**
+Properties
+- Complete: Yes
+- Time:
+- Space: 
+- Optimal: 
 
 ##### Uniform Cost Search (Djikstras)
 - Expand least cost unexpanded node
+**ionsert photo**
+Properties
+- Complete: Yes
+- Time:
+- Space: 
+- Optimal: 
 
 ##### Itertive Deepening Search
 - get DFS space advantage w/ BFS time advantage
+**ionsert photo**
+Properties
+- Complete: Yes
+- Time:
+- Space: 
+- Optimal: 
+
+
+##### Comparison of Search Algorithms
+**ionsert photo**
+
+
+
+
+
+
+
+
 
 ---
 ---
@@ -229,7 +325,27 @@
 ### Gradient Based Algorithms
     ????
 
+
+
+
+
+
+
+
+
+
 ---
 ---
-# Lesson 5: Adversarial Search
-- 
+# Lesson 5: Adversarial Search (Game Trees & Minimax)
+### Games Playing
+### Types of Games
+### Adversrial Search
+
+
+---
+---
+
+
+# Lesson 6: Uncertainty Quantification using Probalistic Reasoning
+### Nature of uncertainty
+### Probability Theory for AI
