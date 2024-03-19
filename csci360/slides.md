@@ -68,10 +68,7 @@
 - Being rational means maximizing your expected utility
 
 
-
-
-
-
+### ... need to finish...
 
 
 ---
@@ -82,7 +79,42 @@
     - ie: humans, robots, etc
 - Percept: content an agents sensors are perceiving
 
-### Rationality
+
+#### Vacuum-cleaner World
+![test](/csci360/img/5.png)
+- Percepts : Location & Contents
+- Actions : Left, Right, Vacuum, NoOp
+![test](/csci360/img/6.png)
+
+
+
+#### Rationality
+- Rational Agent
+    : Chooses whichever action maximizes teh expected value of the performance 
+
+#### PEAS
+- To Design a rational agent, we must specify the task evnironment
+    - Performance Measure
+    - Environment
+    - Actuators
+    - Sensors
+
+- Example: Designing an automated taxi
+    - Performance measure: safety, destination, profits, legality, comfort
+    - Environment: US streets/freeways, traffic, pedesrians
+    - Actuators: Steering, Accellerator, Brake, Horn, Speaker
+    - Sensors: Video, Accelerometers, Gauges, Engine Sensors
+
+#### Environment Types
+- Observability: Sensors have access to the complete state of the environment each time
+- Parital Observability: Sensors have access to some information about some of the state of the environment
+- Single vs Multi-Agent: One or multi agents trying to maximize their performance(compete) or help other maximize their performance (cooperate)
+- Deterministic vs Nondeterministic (Stochastic): Next of the environment completely determined by the current state and teh actions of the agent?
+- Episodic vs Sequential: agent experience divided into atomic episodes. the next episdoe does not depend on the actions taken in previous examples (ie: Image analysis, Poker )
+- Static vs Dynamic: Does the environment change when the agent is performing its actions
+- Semidynamic: environment does not change with time but the agent's performance does
+- Discrete vs Continuous: Are states of the environment, time, percepts and actions agent discrete or continuous variables? 
+- Known vs Unknown: Does the agent know the laws of the environment? 
 
 ---
 ---
