@@ -1,3 +1,81 @@
+# Lesson 1: Introduction
+- Artificial Intelligence
+    : Synthetic intelligence in machines & field of research which aims to create it through the study & design of intelligent agents
+
+- Symbol-System Hypothesis
+    : Belief that intelligence can be studied through the design of intelligent agents
+- Church-Turning Hypothesis
+    : The premise of computing is that any type of computation can be carried out on a Turing Machine (AI is achievable by computers)
+---
+#### Assessing Intelligence of a Machine
+1. Its actions
+2. Its reasoning procedures
+---
+#### Instrumental Rationalility (Max Weber)
+- Calculability
+    - Results can be exact or apporximately calculated
+- Having Intrinsic Reasons
+    - Action is undertaken for intrisic reasons such such as virtue and beliefs
+- Efficiency
+    - Finding best means to achieve goals
+- Predictability
+    - Due to rules, regulations, and structure
+- Control over uncertainties
+- Conformation to conventinal wisdom or ingrained habituation
+---
+#### Espistemology
+    Meaning knowledge or understanding
+
+- Epistemic Rationality
+    :    Achieving accurate beliefs about the world
+        It invovles updating on receiving new evidence
+---
+#### Schools of AI
+![test](/csci360/img/4.png)
+1. Thinking Rationally
+    - Believes in building espitemically rational agents
+2. Acting Rationally
+    - synthesis and analysis of computational agents that act intelligently
+3. Thinking Humanly (turing test)
+    - activities that we associate with human thinking
+    - A computer could be said to “think” if a human interrogator could not tell it apart, through conversation, from a human being
+4. Acting Rationally
+---
+#### Turing Test Critique 
+- The Chinese Room Argument
+    : Intelligent or human-like behavior does not imply having a mind or understanding
+- Reductionism
+    : Reduces intelligence to some form of functionality
+        Remedy: Total Turing Test
+
+- Total Turing Test :
+    1. Natural Language Processing  
+        : enables it to communicate successfully in english
+    2. Knowledge Representation
+        : to store what is knows or hears
+    3. Automated Reasoning
+        : To use the stored information to answer questions to draw new conclusions
+    4. Machine Learning
+        : To adapt to new circumstances and to detect and extrapolate patterns
+    5. Computer Vision (Additional)
+        : To perceive objects
+    6. Robotics (Additional)
+        : To manipulate objects and move about
+---
+#### Machines that maximize utility
+- Rational: maximally acheiving pre-defined goals
+- Goals are expressed in terms of the utility of outcomes
+- Being rational means maximizing your expected utility
+
+
+
+
+
+
+
+
+---
+---
 # Lesson 2: Intelligent Agents
 ### Agents and Environments
 - Agents: entities that perceive the environment through sesnors and act upon the env through their actuators
@@ -6,7 +84,8 @@
 
 ### Rationality
 
-
+---
+---
 # Lesson 3: Problem Solving via Search
 
 ### Problem Types
@@ -54,10 +133,35 @@
 ##### Itertive Deepening Search
 - get DFS space advantage w/ BFS time advantage
 
+---
+---
 # Lesson 4: Informed Search
 ### BFS & Greedy
+
+#### Runtime
+
 ### A* Search
+    - f(n) = g(n) + h(n)
+    - g(n) = cost to reach n
+    - h(n) = estimated cost to goal from n
+    - f(n) = estimated total cost of path thru n to goal
+
+    - Take path lowest f(n) of leaf node
+    - Uses an admissible heuristic (h(n) <= true cost from n)
+
 ### Admissible Heuristics
 ### Properties of A* Search
 ### Local Search & Iterative Improvements
+#### Local Search
+    Local Search Algorithms: Oerate by searching from a start state to neighbouring states
+    Greedy Search: Can be turned into local search based on a huerisitc 
+
+
+    Example: Traveling Salesperson Problem
 ### Gradient Based Algorithms
+    ????
+
+---
+---
+# Lesson 5: Adversarial Search
+- 
