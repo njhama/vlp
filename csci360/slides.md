@@ -115,6 +115,42 @@
 - Semidynamic: environment does not change with time but the agent's performance does
 - Discrete vs Continuous: Are states of the environment, time, percepts and actions agent discrete or continuous variables? 
 - Known vs Unknown: Does the agent know the laws of the environment? 
+- Known: The outcomes for all actions are given
+
+#### Agents
+- Simple Reflex Agents 
+    - Select actions on the basis of the curent percept, igoring the rest of the percept history
+    - Condition-action rules
+![test](/csci360/img/7.png)
+- Reflex Agents with State
+    - To handle partial observability: keep track of the part of the world you acnnot see now
+![test](/csci360/img/8.png)
+- Goal-based agents
+    - Knowing something about the current state of the environment is not always enough to decide what to do 
+    - The agent needs some sort of goal information
+![test](/csci360/img/9.png)
+- Utility-based agents
+    - An internalization of the performance measure
+    - An agent that chooses to maximizes its utility will be rational 
+![test](/csci360/img/10.png)
+- Learning agents
+    - The performance element is responsible for selecting external actions
+    - Input: percept. Output: action
+    - The learning element uses feedback from the critic on how the agent is doing and determines how the perfomrance elemtn should be modified todo better in the future
+    - The critic tells the learning element how well the agent is doing
+    - Problem generator is responsible for suggesting actions that will lead to new and informative experiences
+![test](/csci360/img/11.png)
+#### Summary
+- Agents interact with environments through actuators and sensors
+- The agent function describes what the agent does in all circumstances
+- The performance measure evaluates the environment sequence
+- A perfectly rational agent maximizes expected performance
+- Agent programs implement (some) agents functions
+- PEAS descriptions define task environments
+- Environment are catergorized along several dimensions:
+    observable, deterministic, episodic, static, discrete, single-agent
+- Several basic agent architectures exist:
+    reflex, reflex with state, goal-based, utility-based, learning-based
 
 ---
 ---
