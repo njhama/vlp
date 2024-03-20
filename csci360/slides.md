@@ -396,7 +396,9 @@ Properties
 
 ### Example : Simplified Pac-Man Game Tree
 ![test](/csci360/img/20.png)
-
+---
+### AB Pruning 
+![test](/csci360/img/21.png)
 
 
 
