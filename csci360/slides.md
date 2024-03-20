@@ -289,8 +289,8 @@ A problem defined by four items:
 ![test](/csci360/img/17.png)
 - Properties
     - Complete: Yes
-    - Time:
-    - Space: 
+    - Time: \(O(b^m)\) (branching factor ^ Max depth of state space)
+    - Space: O(bm)
     - Optimal: 
 
 ##### Uniform Cost Search (Djikstras)
@@ -298,13 +298,13 @@ A problem defined by four items:
 **ionsert photo**
 Properties
 - Complete: Yes
-- Time:
-- Space: 
+- Time: \(O(b^d)\) (Branching factor ^ Depth of least cost sol'n)
+- Space: O(bd)
 - Optimal: 
 
 ##### Itertive Deepening Search
 - get DFS space advantage w/ BFS time advantage
-**ionsert photo**
+![test](/csci360/img/18.png)
 Properties
 - Complete: Yes
 - Time:
@@ -313,7 +313,7 @@ Properties
 
 
 ##### Comparison of Search Algorithms
-**ionsert photo**
+![test](/csci360/img/19.png)
 
 
 
