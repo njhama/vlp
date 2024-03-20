@@ -378,9 +378,26 @@ Properties
 ---
 ---
 # Lesson 5: Adversarial Search (Game Trees & Minimax)
-### Games Playing
 ### Types of Games
+- Deterministic or stochastic?
+- One, tow or more players?
+- Zero sum?
+- Perfect information (can you see the state?)
+
 ### Adversrial Search
+- Each agent tries to maximize their utility
+- Each agent has a model of its opponent and assume  that they take the "best" action
+
+### Game Trees
+- Game Play is modeled as a search over a tree
+- Each node is a state and its children are states taht result from each possible action at that state
+- In adversarial game, at each layer, one of the agents takes an action
+
+
+### Example : Simplified Pac-Man Game Tree
+![test](/csci360/img/20.png)
+
+
 
 
 ---
