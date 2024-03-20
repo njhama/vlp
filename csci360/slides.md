@@ -340,7 +340,22 @@ Properties
     - Uses an admissible heuristic (h(n) <= true cost from n)
 
 ### Admissible Heuristics
+- Never overestimates the cost ot reach thegoal from the current node.
+
+** insert tile here **
+- h1(n) = number of misplaced tiles (admissible bc each out of place tile needs at least one move)
+- h2(n) = total Manhattan distance = ie: number of squares from desired location of each tile (admissble bc all any move can do is move one tile closer to the goal)
+
+
+### Relaxed Problems
+
+
 ### Properties of A* Search
+- Complete: Yes, unless there are infintely man nodes
+- Time: Exponential 
+- Space: Keep all nodes in memory
+- Optimal: Yes
+
 ### Local Search & Iterative Improvements
 #### Local Search
     Local Search Algorithms: Oerate by searching from a start state to neighbouring states
