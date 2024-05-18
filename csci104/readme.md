@@ -1,12 +1,4 @@
-Sure, here’s a revised version of the README that breaks down the course content by topic rather than by week, and includes links to the corresponding PDF slides.
 
----
-
-# Data Structures Course Overview
-
-Welcome to the Data Structures course! This course covers fundamental data structures, their implementation, and usage in C++. Below is an outline of the course topics along with links to the lecture slides and some example code snippets.
-
-## Topics Covered
 
 ### 1. Course Overview and Motivation for Data Structures
 - **Slides:** [L01_Overview.pdf](L01_Overview.pdf), [L02a_MemAlloc.pdf](L02a_MemAlloc.pdf)
